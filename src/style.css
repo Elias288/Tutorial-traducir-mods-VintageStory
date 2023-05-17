@@ -1,0 +1,87 @@
+:root {
+    --pc-with: 850px;
+    --background-color-yellow: #bfbc8c;
+    --background-color-pre: #373e47;
+    --title-image-size: 100px;
+}
+
+html {
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    padding-bottom: 5rem;
+    background: var(--background-color-yellow);
+}
+@media screen and (min-width: 850px) {
+    body {
+        padding-bottom: 200px;
+    }
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1 img {
+    width: var(--title-image-size);
+    height: var(--title-image-size);
+}
+
+img {
+    width: 100%;
+}
+@media screen and (min-width: 850px) {
+    img {
+        max-width: 700px;
+    }
+}
+
+nav ul{
+    list-style: none;
+    padding: 0 0.5rem;
+}
+nav ul li {
+    padding: .5rem;
+    box-sizing: border-box;
+}
+nav ul li a {
+    text-decoration: none;
+}
+@media screen and (min-width: 850px) {
+    nav {
+        max-width: 850px;
+        margin: auto;
+    }
+}
+
+pre {
+    background: var(--background-color-pre);
+    color: #dfdfdf;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+@media screen and (min-width: 850px) {
+    pre {
+        max-width: max-content;
+        padding: 0 10px;
+    }
+}
+
+section {
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+section pre {
+    width: 100%;
+    overflow: auto;
+}
+@media screen and (min-width: 850px) {
+    section {
+        max-width: 850px;
+        margin: auto;
+    }
+}

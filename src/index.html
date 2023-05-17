@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tutorial de Traduccion de Mods</title>
+</head>
+
+<body>
+    <h1><img src="assets/Teleporterbase.png" alt="">
+        Tutorial de Traduccion de Mods de Vintage Story</h1>
+
+    <nav>
+        <ul>
+            <li><a href="#Introducción">Introducción</a></li>
+            <li><a href="#PrimerPaso">Primer Paso - Buscar Carpeta del Mod</a></li>
+            <li><a href="#SegundoPaso">Segundo Paso - Agregar archivo de traducción</a></li>
+        </ul>
+    </nav>
+
+    <section id="Introducción">
+        <h2>Introducción</h2>
+
+        <p>El juego Vintage Story a la hora de cargar los idiomas toma del archivo <code>languages.json</code> el
+            codigo que debe cargar para traducir el juego (ej: El juego está en Koreano, carga el archivo de traduccion
+            <code>ko.json</code>), lo mismo pasa con los mods y si este ultimo no cuenta con el archivo que tenga el
+            mismo nombre no lo cargará. En los mods, cada "modder" elige que archivo de traduccion quiere agregar a su
+            mod, pero nosotros tambien podemos hacerlo y eso será explicado en este tutorial.
+        </p>
+    </section>
+    <section id="PrimerPaso">
+        <h2>Primer paso - Buscar la carpeta del Mod</h2>
+
+        <p>Como primer paso debemos elegir un mod al cual querramos agregar una traducción, para eso nos dirigimos a la
+            carpeta donde están alojados los mods que hemos cargado al juego <br>
+            <strong>C:\Users\ ...\AppData\Roaming\VintagestoryData\Mods</strong> o desde el juego en el Gestor de Mods.
+        </p>
+        <a href="assets/gestorDeMods.png"><img src="assets/gestorDeMods.png" alt=""></a>
+
+        <p>Desde ahí seleccionaremos y abriremos el zip de nuestro mod y entraremos en la siguiente ruta:
+            <strong>assets\...\lang</strong> donde encontraremos las
+            traducciones que el creador incluyó
+        </p>
+        <a href="assets/carpetamod.png"><img src="assets/carpetamod.png" alt="" srcset=""></a>
+
+        <p>Ya sabiendo donde debemos incluir nuestro archivo de traduccion pasamos al siguiente paso</p>
+    </section>
+    <section id="SegundoPaso">
+        <h2>Segundo paso - Agregar archivo de traducción</h2>
+
+        <p>Ahora lo siguiente es obtener nuestro archivo de traduccion, que se puede hacer uno o simplemente buscar en
+            la base de datos de <a href="https://crowdin.com/">crowdin.com</a> si ya hay uno hecho para el mod y el
+            idioma que se busca.
+        </p>
+        <a href="https://crowdin.com/project/vintage-story-mods">Traducciones para mods en Crodwin</a>
+        <br>
+        <a href="assets/Crodwin.VS.Mods.png"><img src="assets/Crodwin.VS.Mods.png" alt=""></a>
+
+        <p>Entramos al Idioma, buscamos el mod y lo abrimos</p>
+        <p>Seleccionamos el menu que nos aparece arriba a la derecha y nos desplegará las opciones del archivo</p>
+        <img src="assets/DescaragrArchivoTraduccion(1).png" alt="">
+
+        <p>y lo descargamos desde el botón download</p>
+        <img src="assets/DescaragrArchivoTraduccion(2).png" alt="">
+
+        <p>El archivo que se descarga deberemos cambiarle el nombre por el lenguaje que le corresponde segun el archivo
+            languages.json del juego que se encuentra en: <br>
+            <strong>.. AppData Roaming Vintagestory assets game lang languages.json</strong>
+        </p>
+        <p>
+            Ejemplo del archivo languages.json del momento en que este tutorial se hizo:
+        <pre>
+                <code>
+[
+    {
+        "code": "en",
+        "englishname": "English",
+        "name": "English"
+    },
+    {
+        "code": "ar",
+        "englishname": "Arabic (41% complete)",
+        "name": "عربى"
+    },
+    {
+        "code": "nl",
+        "englishname": "Dutch (33% complete)",
+        "name": "Nederlands"
+    },
+    {
+        "code": "cs",
+        "englishname": "Czech (54% complete)",
+        "name": "Čech"
+    },
+    {
+        "code": "fr",
+        "englishname": "French (100% complete)",
+        "name": "Français"
+    },
+    {
+        "code": "de",
+        "englishname": "German (85% complete)",
+        "name": "Deutsch"
+    },
+    {
+        "code": "eo",
+        "englishname": "Esperanto (46% complete)",
+        "name": "Esperanto"
+    },
+    { 
+        "code": "it",
+        "englishname": "Italian (100% complete)",
+        "name": "Italiano"
+    },
+    {
+        "code": "ja",
+        "englishname": "Japanese (100% complete)",
+        "name": "日本語",
+        "linebreakBehavior": "AfterCharacter"
+    },
+    {
+        "code": "ko",
+        "englishname": "Korean (68% complete)",
+        "name": "한국어",
+        "linebreakBehavior": "AfterCharacter"
+    },
+    {
+        "code": "nl",
+        "englishname": "Dutch (33% complete)",
+        "name": "Nederlands"
+    },
+    {
+        "code": "pl",
+        "englishname": "Polish (92% complete)",
+        "name": "Polski"
+    },
+    {
+        "code": "pt-pt",
+        "englishname": "Portuguese (38% complete)",
+        "name": "Português"
+    },
+    {
+        "code": "pt-br",
+        "englishname": "Portuguese (Brazil) (73% complete)",
+        "name": "Português, brasileira"
+    },
+    {
+        "code": "ru",
+        "englishname": "Russian (100% complete)",
+        "name": "Русский"
+    },
+    {
+        "code": "es-es",
+        "englishname": "Spanish (76% complete)",
+        "name": "Español"
+    },
+    {
+        "code": "es-419",
+        "englishname": "Spanish, Latin America (79% complete)",
+        "name": "Español, latinoamerica"
+    },	
+    {
+        "code": "sk",
+        "englishname": "Slovak (100% complete)",
+        "name": "Slovensky"
+    },
+    {
+        "code": "sv-se",
+        "englishname": "Swedish (48% complete)",
+        "name": "Svenska"
+    },
+    {
+        "code": "uk",
+        "englishname": "Ukrainian (93% complete)",
+        "name": "Українська"
+    },
+    {
+        "code": "zh-cn",
+        "englishname": "Chinese (99% complete)",
+        "name": "Chinese"
+    }
+]
+                </code>
+            </pre>
+        </p>
+        <p>(ej.: si es para frances,
+            le cambiaremos el nombre a <code>fr.json</code>) y lo agregaremos al zip del Mod en la carpeta que buscamos
+            en el <a href="#PrimerPaso">Primer paso</a>.</p>
+        <p>Felicitaciones tu mod ya está traducido!!!</p>
+    </section>
+    <section></section>
+</body>
+</html>
